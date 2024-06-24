@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "c4c3b8e5-792e-4097-b92c-d4ab77bc2d09",
+		"name": "Hotel room management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19188117",
+		"_collection_link": "https://bold-resonance-706397.postman.co/workspace/Supplier-Prism~b7eae6e0-9b09-499c-9891-d95dd8aaab77/collection/19188117-c4c3b8e5-792e-4097-b92c-d4ab77bc2d09?action=share&source=collection_link&creator=19188117"
+	},
+	"item": [
+		{
+			"name": "create room rates",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"room_id\": 1,\r\n  \"room_name\": \"Deluxe Room\",\r\n  \"default_rate\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/room-rates/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"room-rates",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create overridden room rates",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"room_id\": 1,\r\n  \"room_name\": \"Deluxe Room\",\r\n  \"default_rate\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/overridden-rates/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"overridden-rates",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create discount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"room_id\": 1,\r\n  \"room_name\": \"Deluxe Room\",\r\n  \"default_rate\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/overridden-rates/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"overridden-rates",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assign discount to roomrate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"room_id\": 1,\r\n  \"room_name\": \"Deluxe Room\",\r\n  \"default_rate\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/overridden-rates/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"overridden-rates",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list room rates",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"room_id\": 1,\r\n  \"room_name\": \"Deluxe Room\",\r\n  \"default_rate\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/room-rates/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"room-rates",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Final Rate for a Room and Date Range",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"room_id\": 1,\r\n  \"room_name\": \"Deluxe Room\",\r\n  \"default_rate\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/final-rate/?room_id=2&start_date=2024-08-01&end_date=2024-08-05",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"final-rate",
+						""
+					],
+					"query": [
+						{
+							"key": "room_id",
+							"value": "2"
+						},
+						{
+							"key": "start_date",
+							"value": "2024-08-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2024-08-05"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list discount room rates",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"room_id\": 1,\r\n  \"room_name\": \"Deluxe Room\",\r\n  \"default_rate\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/room-rates/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"room-rates",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list discount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"room_id\": 1,\r\n  \"room_name\": \"Deluxe Room\",\r\n  \"default_rate\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/discounts/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"discounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list overridden room rates",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"room_id\": 1,\r\n  \"room_name\": \"Deluxe Room\",\r\n  \"default_rate\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/room-rates/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"room-rates",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
