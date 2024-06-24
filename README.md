@@ -24,7 +24,7 @@ This API allows hotels to manage and retrieve room rates, including the applicat
 
 - Python 3.7+
 - Django 3.0+
-- PostgreSQL (or SQLite for development)
+- SQLite for development
 
 ### Installation
 
